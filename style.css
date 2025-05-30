@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background: #e3f2fd;
+  border-radius: 12px;
+}
+
+h1 {
+  color: #1976d2;
+  font-size: 24px;
+}
+
+nav button {
+  background: #bbdefb;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.quiz-container {
+  background: #ffffff;
+  padding: 20px;
+  margin: auto;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.question {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.options button {
+  display: block;
+  margin: 8px auto;
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 60%;
+  font-size: 16px;
+}
+
+.quiz-controls button {
+  margin: 5px;
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  background: #90caf9;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.weather-search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.weather-search input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.weather-search button {
+  padding: 10px 16px;
+  border: none;
+  background: #64b5f6;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.weather-card {
+  background: white;
+  margin: auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.weather-card img {
+  width: 80px;
+  height: 80px;
+}
+
+.weather-card p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+}

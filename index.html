@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Learning Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>JavaScript Quiz & Weather API</h1>
+    <nav>
+      <button onclick="showSection('quiz')">📝 JavaScript Quiz</button>
+      <button onclick="showSection('weather')">🌤️ Weather API</button>
+    </nav>
+  </header>
+
+  <section id="quiz-section" class="section">
+    <h2>Interactive Quiz</h2>
+    <div class="quiz-container">
+      <div id="question" class="question"></div>
+      <div id="options" class="options"></div>
+      <div class="quiz-controls">
+        <button onclick="prevQuestion()">Previous</button>
+        <button onclick="skipQuestion()">Skip</button>
+        <button onclick="nextQuestion()">Next</button>
+        <button onclick="submitAnswer()">Submit</button>
+      </div>
+      <p id="answer-result" class="result"></p>
+    </div>
+  </section>
+
+  <section id="weather-section" class="section" style="display: none;">
+    <h2>Weather Dashboard</h2>
+    <div class="weather-search">
+      <input type="text" id="city-input" placeholder="Enter city name...">
+      <button onclick="fetchWeather()">🔍</button>
+    </div>
+    <div id="weather-result" class="weather-card"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 JavaScript Quiz & Weather API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
